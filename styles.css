@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    background: #2a2a2a; /* Dark container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #ff6f61; /* Accent color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Image Section */
+  .image-section {
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    background: #333333; /* Dark background for image section */
+    padding: 20px;
+  }
+  
+  .image-section:hover {
+    transform: scale(1.02);
+  }
+  
+  #car-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: filter 0.3s ease;
+    margin: 0 auto; /* Center the image */
+  }
+  
+  /* Controls Section */
+  .controls {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .color-picker, .car-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #cccccc; /* Light gray text */
+  }
+  
+  input[type="color"] {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    background: #444444; /* Dark input background */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  input[type="color"]:hover {
+    transform: scale(1.1);
+  }
+  
+  select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #555555; /* Dark border */
+    background: #444444; /* Dark background */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  select:hover {
+    border-color: #ff6f61; /* Accent color */
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5); /* Accent glow */
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #ff6f61; /* Accent color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff4a3d; /* Darker accent color */
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }

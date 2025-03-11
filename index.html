@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Car Image Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Car Image Generator</h1>
+    <div class="image-section">
+      <img id="car-image" src="pic/labargini.png" alt="Car Image">
+    </div>
+    <div class="controls">
+      <div class="color-picker">
+        <label for="color-picker">Choose Car Color:</label>
+        <input type="color" id="color-picker" value="#ff6f61">
+      </div>
+      <div class="car-selector">
+        <label for="car-select">Select Car:</label>
+        <select id="car-select">
+          <option value="pic/labargini.png">Lamborghini</option>
+          <option value="pic/ferrari_458.png">Ferrari 458</option>
+          <option value="pic/pursche_911.png">Porsche 911</option>
+          <option value="pic/bugatti_chiron.png">Bugatti Chiron</option>
+        </select>
+      </div>
+      <button id="reset-button">Reset to Original</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
